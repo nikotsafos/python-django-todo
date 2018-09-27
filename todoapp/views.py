@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .models import Todo
+# from .models import Todo
 
 # Main routes
 def index(request):
@@ -16,6 +16,9 @@ def delete(request, todo_id):
 
 def delete(request, todo_id):
     return HttpResponse("Mark done")
+
+def done():
+    return HttpResponse('done')
 
 # Auth-related routes
 def signup(request):
