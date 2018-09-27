@@ -2,7 +2,6 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-# from .models import Todo
 
 # Main routes
 def index(request):
